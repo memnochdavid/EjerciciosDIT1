@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/uno"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#243EFF"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/dos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00CCFF"
+        app:layout_constraintVertical_weight="2"
+        app:layout_constraintTop_toBottomOf="@+id/uno"
+        app:layout_constraintBottom_toTopOf="@+id/centro_uno"/>
+
+        <TextView
+            android:id="@+id/centro_uno"
+            android:background="#00B419"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="4"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintTop_toBottomOf="@id/dos"
+            app:layout_constraintBottom_toTopOf="@id/tres"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/centro_dos"/>
+
+        <TextView
+            android:id="@+id/centro_dos"
+            android:background="#A29F00"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="4"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintTop_toBottomOf="@id/dos"
+            app:layout_constraintBottom_toTopOf="@id/tres"
+            app:layout_constraintStart_toEndOf="@id/centro_uno"
+            app:layout_constraintEnd_toStartOf="@id/centro_tres"/>
+
+        <TextView
+            android:id="@+id/centro_tres"
+            android:background="#00B419"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="4"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintTop_toBottomOf="@id/dos"
+            app:layout_constraintBottom_toTopOf="@id/tres"
+            app:layout_constraintStart_toEndOf="@id/centro_dos"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tres"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00CCFF"
+        app:layout_constraintVertical_weight="2"
+        app:layout_constraintTop_toBottomOf="@+id/centro_uno"
+        app:layout_constraintBottom_toTopOf="@+id/cuatro"/>
+
+    <TextView
+        android:id="@+id/cuatro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#243EFF"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/tres"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
