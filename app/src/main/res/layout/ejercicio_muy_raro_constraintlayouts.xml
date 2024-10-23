@@ -8,6 +8,7 @@
         android:id="@+id/uno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -48,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/uno"
         app:layout_constraintBottom_toTopOf="@id/tres"
-        app:layout_constraintVertical_weight="1">
+        app:layout_constraintVertical_weight="0.7">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/boton4"
@@ -56,7 +57,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/boton5"
             app:layout_constraintTop_toTopOf="parent"/>
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/boton5"
@@ -71,7 +71,6 @@
             android:text="boton6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@id/boton5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
@@ -92,19 +91,17 @@
             android:text="boton7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="30dp"
             app:layout_constraintEnd_toStartOf="@id/boton8"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="3.0"/>
+            app:layout_constraintBottom_toBottomOf="parent"/>
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/boton8"
             android:text="boton8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@id/boton7"
+            android:layout_marginEnd="30dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"/>
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 
@@ -114,12 +111,21 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cuatro"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tres"
         app:layout_constraintBottom_toTopOf="@id/cinco">
-
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/boton9"
+            android:text="boton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -131,6 +137,24 @@
         app:layout_constraintTop_toBottomOf="@id/cuatro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_weight="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/boton10"
+            android:text="boton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/boton11"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/boton11"
+            android:text="boton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/boton10"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
