@@ -22,14 +22,21 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        android:background="@drawable/caca"
-        android:layout_margin="10dp"
+        android:background="#3F51B5"
+        android:padding="5dp"
         app:layout_constraintHorizontal_weight="0.25"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/uno"
         app:layout_constraintBottom_toTopOf="@id/tres"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintVertical_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/caca"/>
+
+    </LinearLayout>
 
 
     <LinearLayout

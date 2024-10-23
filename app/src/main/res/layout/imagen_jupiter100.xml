@@ -10,7 +10,7 @@
         android:id="@+id/texto"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Jupiter"
+        android:text="Júpiter"
         android:gravity="bottom|center"
         android:textSize="40sp"
         android:textStyle="bold"
